@@ -1,0 +1,151 @@
+*{
+    outline: 0px solid rgb(155, 148, 148);
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: Dogica;
+    src: url(../fonts/dogica.ttf);
+}
+body{                                            /*proprietà GENERALI*/
+    background-color: rgb(0, 0, 0);
+    font-family: Dogica;
+    line-height: 1.1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1rem;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/* STILI DOMANDE ----------------------------------------------------------------------------------------------------------------------------*/
+.question{
+    width: 100%;
+    margin: /*1.5rem*/0 auto .7rem auto;
+    font-family: Dogica;
+    font-size: .8rem;
+    border: none;
+    padding: 1.5rem;
+    background-color:#ffee3b;
+    text-align: justify;
+}
+
+.question p{
+    text-align: center;
+
+}
+
+/*--------------------*/
+.qw1{
+    width: 350px;
+}
+.qw2{                                      /* aggiungi in html di fianco a question         */
+    width: 704px;                         /*  per dire "quante tessere è lunga la domanda" */
+}
+.qw3{
+    width: 1056px;
+}
+.qw4{
+    width: 1408px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* STILI DELLE CARD ----------------------------------------------------------------------------------------------------------------------------*/
+.flex-container{
+    display: flex;
+    flex-direction: row;             /* contiene tutti gli elementi CARD */
+    justify-content:center;
+}
+.card{                               /*proprietà delle CARD */
+    width: 350px;
+    padding: 0;
+    margin: 2px;
+    background-color: black;
+
+}
+.card:hover{                         /*quando si posiziona il cursore sulle CARD */
+    scale: 110% 110% 110%;
+    border: 1px solid black;
+
+}
+.double-card{                        /* CARD più larghe */
+    width: 700px;
+    padding: 1rem;
+}
+.double-card:hover{                  /* cursore su CARD più larghe */
+    scale: 1.1 1.1 1.1;
+}
+.choice-img{
+    width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*STILI DEI GAMEOVER----------------------------------------------------------------------------------------------------------------------------*/
+.gameover-card{                        /*CONTIENE l'immagine del gameover*/
+    width: 400px;
+    padding-top: 0;
+    margin: 3rem;
+}
+.ending:hover{
+    scale: 110% 110% 110%;
+    
+}
+.description{                          /*la DESCRIZIONE BIANCA sotto le immagini delle card*/
+    font-family: Dogica;
+    font-size: .8rem;
+    text-align: center;
+    height: 10rem;
+    border: none;
+    padding: 1.5rem;
+    background-color: white;
+    text-align: justify;
+    margin-top: .6rem;
+}
+.larger{
+    height: 11rem;
+}
+.description-low{                      /* DESCRIZIONE GIALLA quando è SOTTO le immagini */
+    font-family: Dogica;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    min-height: 10rem;
+    border: none;
+    padding: 1.5rem;
+    background-color: #ffee3b;
+    text-align: justify;
+    margin-top: .6rem;
+}
+
+.game-over-description{                  /*DESCRIZIONE GIALLA sotto GAME OVER*/
+    font-family: Dogica;
+    font-size: .8rem;
+    text-align: center;
+    height: auto;
+    border: none;
+    padding: 1.5rem;
+    background-color: #ffee3b;
+    text-align: left;
+    margin-top: .6rem;
+}
+.restart{                                /*pulsante "VUOI RIPROVARE?"*/
+    font-family: Dogica;
+    text-align: center;
+    color: #00ff18;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 2rem;
+}
+.restart:hover{
+    font-size: larger;
+}
+.centered{
+    text-align: center;                 /*classe per centrare porzioni di testo*/
+    display: block;
+
+}
